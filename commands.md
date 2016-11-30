@@ -14,5 +14,7 @@ target.file_01
 -d means use digit number  
 -a means length 2
 
+# count files under a folder
 
+`find DIR_NAME -type f ¦ wc -l`
 
