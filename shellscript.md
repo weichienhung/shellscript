@@ -17,8 +17,9 @@ sed -n 1~2p filename #odd
 sed -n 2~2p filename | while read -r line; do
         echo $line
 done
-
+```
 # simple loop a array
+```
 myarray=( "test" "test2" "test3" )
 for i in "${myarray[@]}"
 do
