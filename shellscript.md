@@ -26,3 +26,25 @@ do
   echo $i
 done
 ```
+# sed tutorial
+## retrieve the specified string from a line  
+for example a xml file
+```
+<myxml>
+  <release>1.0.22</release>
+</myxml>
+```
+To get release version
+```
+latest=$(cat my.xml | sed -n 's/.*<release>\(.*\)<\/release>/\1/p')
+# (, ), / is special characters. add prefix '/'
+# \1 to get group 1 result
+```
+## replace string in a config file
+```
+sed -i 's/.*MyTest.*/YourTest/' config.txt
+```
+## insert a new line in a config file
+```
+sed -i 's/.*MyTest.*/&\nYourTest/g' config.txt
+```
