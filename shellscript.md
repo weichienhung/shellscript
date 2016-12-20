@@ -48,3 +48,8 @@ sed -i 's/.*MyTest.*/YourTest/' config.txt
 ```
 sed -i 's/.*MyTest.*/&\nYourTest/g' config.txt
 ```
+
+### sed delimiter can be changed. like
+```
+sed -i 's:.*MyTest.*:YourTest:' config.txt
+```
