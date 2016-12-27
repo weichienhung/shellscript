@@ -18,3 +18,27 @@ target.file_01
 
 `find DIR_NAME -type f ¦ wc -l`
 
+# Only show lines that's matched by a fiter file
+For example: you have a source.txt and contains
+```
+AAA
+BBB
+CCC
+DDD
+AAA
+DDD
+GGA
+BBB
+DDD
+KKK
+```
+And have a filter.txt contains
+```
+AAA
+BBB
+```
+Below command to filter
+
+`
+cat source.txt | grep -f filter.txt
+`
