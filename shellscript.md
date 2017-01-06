@@ -1,3 +1,10 @@
+# write Ctrl+A in script. more portable
+```
+CTRL_A=`echo -e '\001'`
+cut -d $CTRL_A .....
+awk -F $CTRL_A .....
+```
+
 # pading zero digit
 
 ```
