@@ -42,3 +42,13 @@ Below command to filter
 `
 cat source.txt | grep -f filter.txt
 `
+
+
+# Sort data
+```
+sort -t `echo -e '\001'` -k 1,1 -k 3,3r test.file
+
+# -t means separator. here is CTRL+A
+# -k means sort by column 1 and column 3. r means reverse sorting (descending)
+# test.file is source.
+```
