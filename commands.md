@@ -42,7 +42,11 @@ Below command to filter
 `
 cat source.txt | grep -f filter.txt
 `
-
+# show duplicates line in two files
+The files must be sorted  
+`
+comm -1 -2 {file1} {file2}
+`
 
 # Sort data
 ```
